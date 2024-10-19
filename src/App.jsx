@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 //JSX Crash Course
 // const App = () => {
@@ -27,7 +28,12 @@ import Navbar from "./components/Navbar";
 // export default App;
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 };
 
 export default App;
