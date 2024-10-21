@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import HomeCards from "./components/HomeCards";
 
 //JSX Crash Course
 // const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
+      <HomeCards />
     </>
   );
 };
