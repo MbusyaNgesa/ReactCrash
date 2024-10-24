@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import MainLayout from "./layouts/MainLayout";
 
 //JSX Crash Course
 // const App = () => {
@@ -33,7 +34,11 @@ import HomePage from "./pages/HomePage";
 // export default App;
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route index element={<HomePage />} />)
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<HomePage />} />
+    </Route>
+  )
 );
 const App = () => {
   return <RouterProvider router={router} />;
